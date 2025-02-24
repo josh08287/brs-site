@@ -12,9 +12,9 @@ const HeaderBarBrand = () => (
       <i className="fab js-logo fa-react fa-2x" aria-hidden="true" />
     </a>
     <NavLink to="/" className="navbar-item nav-home">
-      <span className="brand-first">SHOP</span>
-      <span className="brand-second">AT</span>
-      <span className="brand-third">HOME</span>
+      <span className="brand-first">Blaines</span>
+      <span className="brand-second">Repair</span>
+      <span className="brand-third">Service</span>
     </NavLink>
   </div>
 );
