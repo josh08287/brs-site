@@ -8,13 +8,10 @@ import Home from './Home';
 // const Products = withRouter(
 //   lazy(() => import(/* webpackChunkName: "products" */ './products/Products')),
 // );
-const Products = lazy(() =>
-  import(/* webpackChunkName: "products" */ './products/Products'),
-);
+//const Products = lazy(() =>
+ // import(/* webpackChunkName: "products" */ './products/Products'),
+//)//;
 
-const Discounts = lazy(() =>
-  import(/* webpackChunkName: "discounts" */ './Discounts'),
-);
 
 class App extends Component {
   render() {
@@ -29,8 +26,6 @@ class App extends Component {
                 <Route path="/" element={<Home />} />
                 {/* <Redirect from="/" exact to="/home" /> */}
                 <Route path="home" element={<Home />} />
-                <Route path="discounts/*" element={<Discounts />} />
-                <Route path="products/*" element={<Products />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
